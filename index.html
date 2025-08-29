@@ -12,36 +12,44 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-green-50">
-    <header class="flex justify-between py-5 px-10 mx-auto max-w-[1600px]">
-      <div class="flex gap-2 items-center w-[220px]">
+    <header
+      class="flex justify-between py-5 px-1 md:px-10 mx-auto max-w-[1600px] items-center"
+    >
+      <div class="flex gap-2 items-center w-[110px] md:w-[220px]">
         <div>
-          <img src="./assets/logo.png" class="h-[50px] w-[50px]" alt="" />
+          <img src="./assets/logo.png" class="h-[30px] md:h-[50px] w-[30px] md:w-[50px]" alt="" />
         </div>
-        <h3 class="font-bold text-xl">Emergency Service</h3>
+        <h3 class="font-bold text-sm md:text-xl">Emergency Service</h3>
       </div>
       <div class="flex gap-3">
         <div class="flex gap-3">
           <div
-            class="bg-sky-100 rounded-full h-[52px] flex gap-2 justify-between items-center px-7"
+            class="bg-sky-100 rounded-full h-[30px] md:h-[52px] flex gap-2 justify-between items-center px-5 md:px-7"
           >
-            <span class="font-bold text-xl" id="white_list_count">0</span>
+            <span class="font-bold text-lg md:text-xl" id="white_list_count"
+              >0</span
+            >
             <img src="./assets/heart.png" class="h-[30px]" alt="" />
           </div>
           <div
-            class="bg-sky-100 rounded-full h-[52px] flex gap-2 justify-between items-center px-7"
+            class="bg-sky-100 rounded-full h-[30px] md:h-[52px] flex gap-2 justify-between items-center px-5 md:px-7"
           >
-            <span class="font-bold text-xl" id="point">100</span>
-            <img src="./assets/coin.png" class="h-[30px]" alt="" />
+            <span class="font-bold text-lg md:text-xl" id="point">100</span>
+            <img src="./assets/coin.png" class="h-[15px] md:h-[30px]" alt="" />
           </div>
           <div
-            class="bg-green-500 rounded-full h-[52px] flex gap-2 justify-between items-center px-7"
+            class="bg-green-500 rounded-full h-[30px] md:h-[52px] flex gap-2 justify-between items-center px-5 md:px-7"
           >
-            <span class="text-white font-bold">2 Copy</span>
+            <span
+              class="text-white font-bold text-sm md:text-lg"
+              id="copyButton"
+              >0 Copy</span
+            >
           </div>
         </div>
       </div>
     </header>
-    <div class="bg-green-950 text-center grid justify-center items-center py-5">
+    <div class="bg-green-950 text-center grid justify-center items-center py-10">
       <img
         src="./assets/logo-dark.png"
         class="h-[92px] w-[92px] inline-block m-auto"
@@ -57,8 +65,8 @@
     </div>
     <div class="max-w-[1600px] my-10 px-10 m-auto">
       <div class="grid grid-cols-12 gap-5">
-        <div class="col-span-9">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="col-span-12 md:col-span-8 lg:col-span-9">
+          <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5">
             <div class="bg-white shadow-md rounded-md px-5 py-5">
               <div class="flex my-4 justify-between items-center">
                 <div
@@ -87,7 +95,177 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="call rounded-lg border bg-green-600 text-white border-green-600 py-1 w-full cursor-pointer"
+                  class="call rounded-lg border bg-[#00A63E] text-white border-[#00A63E] py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-md px-5 py-5">
+              <div class="flex my-4 justify-between items-center">
+                <div
+                  class="h-[60px] w-[60px] rounded-2xl flex justify-center items-center bg-red-300"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    class="h-[32px] w-[32px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart text-xl white_list cursor-pointer"
+                ></i>
+              </div>
+              <h3 class="font-bold text-lg">জাতীয় জরুরি সেবা</h3>
+              <p class="text-gray-600 text-sm mb-2">National Emergency</p>
+              <h2 class="text-xl font-bold mt-3">999</h2>
+              <span class="p-2 rounded-full px-3 bg-gray-200 mt-2 inline-block"
+                >সার্বজনীন</span
+              >
+              <div class="flex mt-5 gap-2">
+                <button
+                  class="copy rounded-xl border border-gray-300 py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call rounded-lg border bg-[#00A63E] text-white border-[#00A63E] py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-md px-5 py-5">
+              <div class="flex my-4 justify-between items-center">
+                <div
+                  class="h-[60px] w-[60px] rounded-2xl flex justify-center items-center bg-red-300"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    class="h-[32px] w-[32px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart text-xl white_list cursor-pointer"
+                ></i>
+              </div>
+              <h3 class="font-bold text-lg">জাতীয় জরুরি সেবা</h3>
+              <p class="text-gray-600 text-sm mb-2">National Emergency</p>
+              <h2 class="text-xl font-bold mt-3">999</h2>
+              <span class="p-2 rounded-full px-3 bg-gray-200 mt-2 inline-block"
+                >সার্বজনীন</span
+              >
+              <div class="flex mt-5 gap-2">
+                <button
+                  class="copy rounded-xl border border-gray-300 py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call rounded-lg border bg-[#00A63E] text-white border-[#00A63E] py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-md px-5 py-5">
+              <div class="flex my-4 justify-between items-center">
+                <div
+                  class="h-[60px] w-[60px] rounded-2xl flex justify-center items-center bg-red-300"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    class="h-[32px] w-[32px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart text-xl white_list cursor-pointer"
+                ></i>
+              </div>
+              <h3 class="font-bold text-lg">জাতীয় জরুরি সেবা</h3>
+              <p class="text-gray-600 text-sm mb-2">National Emergency</p>
+              <h2 class="text-xl font-bold mt-3">999</h2>
+              <span class="p-2 rounded-full px-3 bg-gray-200 mt-2 inline-block"
+                >সার্বজনীন</span
+              >
+              <div class="flex mt-5 gap-2">
+                <button
+                  class="copy rounded-xl border border-gray-300 py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call rounded-lg border bg-[#00A63E] text-white border-[#00A63E] py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-md px-5 py-5">
+              <div class="flex my-4 justify-between items-center">
+                <div
+                  class="h-[60px] w-[60px] rounded-2xl flex justify-center items-center bg-red-300"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    class="h-[32px] w-[32px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart text-xl white_list cursor-pointer"
+                ></i>
+              </div>
+              <h3 class="font-bold text-lg">জাতীয় জরুরি সেবা</h3>
+              <p class="text-gray-600 text-sm mb-2">National Emergency</p>
+              <h2 class="text-xl font-bold mt-3">999</h2>
+              <span class="p-2 rounded-full px-3 bg-gray-200 mt-2 inline-block"
+                >সার্বজনীন</span
+              >
+              <div class="flex mt-5 gap-2">
+                <button
+                  class="copy rounded-xl border border-gray-300 py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call rounded-lg border bg-[#00A63E] text-white border-[#00A63E] py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-md px-5 py-5">
+              <div class="flex my-4 justify-between items-center">
+                <div
+                  class="h-[60px] w-[60px] rounded-2xl flex justify-center items-center bg-red-300"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    class="h-[32px] w-[32px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart text-xl white_list cursor-pointer"
+                ></i>
+              </div>
+              <h3 class="font-bold text-lg">জাতীয় জরুরি সেবা</h3>
+              <p class="text-gray-600 text-sm mb-2">National Emergency</p>
+              <h2 class="text-xl font-bold mt-3">999</h2>
+              <span class="p-2 rounded-full px-3 bg-gray-200 mt-2 inline-block"
+                >সার্বজনীন</span
+              >
+              <div class="flex mt-5 gap-2">
+                <button
+                  class="copy rounded-xl border border-gray-300 py-1 w-full cursor-pointer"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call rounded-lg border bg-[#00A63E] text-white border-[#00A63E] py-1 w-full cursor-pointer"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -96,7 +274,7 @@
           </div>
         </div>
 
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-4 lg:col-span-3">
           <div class="rounded-lg shadow-md px-5 py-7 bg-white">
             <div class="flex justify-between">
               <div class="flex items-center gap-2">
@@ -104,8 +282,7 @@
                 <span class="font-bold text-lg">Call History</span>
               </div>
               <button
-                class="py-2 px-7 rounded-full bg-green-600 text-white cursor-pointer"
-                id="clear_history"
+                class="py-2 px-7 rounded-full bg-[#00A63E] text-white cursor-[#00A63E]                id="clear_history"
               >
                 Clear
               </button>
@@ -115,5 +292,69 @@
         </div>
       </div>
     </div>
+    <script>
+      const copy = document.querySelectorAll(".copy");
+      const call = document.querySelectorAll(".call");
+      const point = document.getElementById("point");
+      const white_list = document.querySelectorAll(".white_list");
+      const history = document.getElementById("history");
+      const copyButton = document.getElementById("copyButton");
+      const white_list_count = document.getElementById("white_list_count");
+      copy.forEach((copyBtn) => {
+        copyBtn.addEventListener("click", function () {
+          const phoneNumber =
+            this.parentElement.parentElement.querySelector("h2").innerText;
+          navigator.clipboard.writeText(phoneNumber);
+          alert("Number is copied");
+          copyButton.innerText =
+            Number(copyButton.innerText.split(" ")[0]) + 1 + " Copy";
+        });
+      });
+      white_list.forEach((heartIcon) => {
+        heartIcon.addEventListener("click", function () {
+          this.classList.toggle("text-red-700");
+          if (this.classList.contains("text-red-700")) {
+            white_list_count.innerText = Number(white_list_count.innerText) + 1;
+          } else {
+            white_list_count.innerText = Number(white_list_count.innerText) - 1;
+          }
+        });
+      });
+
+      call.forEach((callItem) => {
+        callItem.addEventListener("click", function () {
+          if (Number(point.innerText) != 0) {
+            const phoneNumber =
+              this.parentElement.parentElement.querySelector("h2").innerText;
+            alert("Calling " + phoneNumber);
+            point.innerText = Number(point.innerText) - 20;
+            history.innerHTML += `
+            <div class="bg-gray-50 rounded-lg flex justify-between py-3 px-4 items-center">
+              <div>
+                <h3 class="font-bold text-gray-600 text-lg my-1">
+                  ${
+                    this.parentElement.parentElement.querySelector("h3")
+                      .innerText
+                  }
+                </h3>
+                <p class="text-gray-700">${phoneNumber}</p>
+              </div>
+              <p>${new Date().toLocaleTimeString("en-US", {
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: true,
+              })}</p>
+            </div>
+          `;
+          } else {
+            alert("You don't have enough points");
+          }
+        });
+      });
+      document.getElementById("clear_history").addEventListener("click", () => {
+        history.innerHTML = "";
+      });
+    </script>
   </body>
 </html>
