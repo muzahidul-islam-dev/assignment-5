@@ -17,7 +17,7 @@
 Create heading element:
 
 const newElement = document.createElement("h1");  
-newElement.textContent = "Hello!";  
+newElement.textContent = "Muzahidul Islam";  
 document.body.appendChild(newElement);
 
 ## Question: What is Event Bubbling and how does it work?
