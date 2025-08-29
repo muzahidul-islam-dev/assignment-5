@@ -2,13 +2,13 @@
 
 ## Answare:
 
-### 1. getElementById: Select One Element if element using id
+1. getElementById: Select One Element if element using id
 
-### 2. getElementsByClassName: Select Multiple Element who using same class
+2. getElementsByClassName: Select Multiple Element who using same class
 
-### 3. querySelector: Select matching first element
+3. querySelector: Select matching first element
 
-### 4. querySelectorAll: Select all matching all elements
+4. querySelectorAll: Select all matching all elements
 
 ## Question: How to create and insert a new element into the DOM
 
@@ -22,7 +22,9 @@ document.body.appendChild(newElement);
 
 ## Question: What is Event Bubbling and how does it work?
 
-### Answare: Event Bubbling means an event starts on the target element and then propagates upward through its parent elements to the document.
+### Answare:
+
+Event Bubbling means an event starts on the target element and then propagates upward through its parent elements to the document.
 
 ## Question: What is Event Delegation in JavaScript? Why is it useful?
 
