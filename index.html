@@ -15,9 +15,10 @@
     <header
       class="grid grid-cols-5 justify-center md:justify-between py-5 px-1 md:px-10 mx-auto max-w-[1600px] items-center"
     >
-      <div class="grid md:flex my-3 md:my-0 col-span-5 m-auto text-center md:text-left md:col-span-1 gap-1 md:gap-2 items-center justify-between w-[100px] md:w-[220px]">
+      <div
+        class="grid md:flex my-3 md:my-0 col-span-5 m-auto text-center md:text-left md:col-span-1 gap-1 md:gap-2 items-center justify-between w-[100px] md:w-[220px]"
+      >
         <div>
-          
           <img
             src="./assets/logo.png"
             class="h-[50px] w-[50px] m-auto"
@@ -26,7 +27,9 @@
         </div>
         <h3 class="font-bold text-sm md:text-xl">Emergency Service</h3>
       </div>
-      <div class="flex justify-center md:justify-end col-span-5 md:col-span-4 gap-1 md:gap-3">
+      <div
+        class="flex justify-center md:justify-end col-span-5 md:col-span-4 gap-1 md:gap-3"
+      >
         <div class="flex gap-1 md:gap-3">
           <div
             class="bg-sky-100 rounded-full h-[30px] md:h-[52px] flex gap-2 justify-between items-center px-5 md:px-7"
@@ -415,7 +418,7 @@
           const phoneNumber =
             this.parentElement.parentElement.querySelector("h2").innerText;
           navigator.clipboard.writeText(phoneNumber);
-          alert("Number is copied");
+          alert("নম্বর কপি হয়েছে: " + phoneNumber);
           copyButton.innerText =
             Number(copyButton.innerText.split(" ")[0]) + 1 + " Copy";
         });
@@ -436,7 +439,12 @@
           if (Number(point.innerText) != 0) {
             const phoneNumber =
               this.parentElement.parentElement.querySelector("h2").innerText;
-            alert("Calling " + phoneNumber);
+            alert(
+              "Calling " +
+                this.parentElement.parentElement.querySelector("h3").innerText +
+                " " +
+                phoneNumber
+            );
             point.innerText = Number(point.innerText) - 20;
             history.innerHTML += `
             <div class="bg-gray-50 rounded-lg flex justify-between py-3 px-4 items-center">
